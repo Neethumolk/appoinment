@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-4">
+        <app-doctor-detail-form></app-doctor-detail-form>
+    </div>
+    
+    <div class="col-md-3">
+    
+    </div>
+    
+    <div class="col-md-5">
+    <table class="table">
+    <thead class="thead-light">
+    <tr>
+    <th>Doctor Id</th>
+    <th>Doctor Name</th>
+        <th>Experience</th>
+        <th>PhoneNumber</th>
+        <th>Specialization</th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ad of service.list">
+    <td (click)="populateForm(ad)">{{ad.doctorId}}</td> 
+    <td (click)="populateForm(ad)">{{ad.doctorName}}</td>
+        <td (click)="populateForm(ad)">{{ad.experience}}</td>
+        <td (click)="populateForm(ad)">{{ad.phoneNumber}}</td>
+        <td (click)="populateForm(ad)">{{ad.specialization}}</td>
+    <td>
+    <i class="far fa-trash-alt fa-lg text-danger"(click)="onDelete(ad.doctorId)"></i>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    
+    </div>
+    
+    </div>

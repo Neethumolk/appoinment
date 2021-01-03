@@ -1,0 +1,37 @@
+<form novalidate #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="patientId"
+    [value]="service.formData.patientId">
+   <div class="form-group">
+    <label >Patient Name</label>
+    <input  class="form-control form-control-lg" placeholder="Full Name"
+     name="patientName" #patientName="ngModel"[(ngModel)]="service.formData.patientName" required>
+</div>
+<div class="form-group">
+    <label >Patient Age</label>
+    <input  class="form-control form-control-lg" placeholder="Your Age"
+     name="patientAge" #patientAge="ngModel"[(ngModel)]="service.formData.patientAge" required maxlength="2" minlength="1">
+</div>
+<div class="form-group">
+    <label >Phone Number</label>
+    <input  class="form-control form-control-lg" placeholder="10 Digits only"
+     name="phoneNumber" #phoneNumber="ngModel"[(ngModel)]="service.formData.phoneNumber" required maxlength="10" minlength="10">
+</div>
+<div class="form-row">
+    <div class="form-group col-md-8">
+        <label >Username</label>
+        <input  class="form-control form-control-lg" placeholder="username"
+         name="username" #username="ngModel"[(ngModel)]="service.formData.username" required>
+    </div>
+    <div class="form-group col-md-8">
+        <label >Password</label>
+        <input  type="password " class="form-control form-control-lg" placeholder="password"
+         name="password" #password="ngModel"[(ngModel)]="service.formData.password" required>
+    </div>
+</div>
+<div class="form-group">
+    <button class="btn btn-info-btn-lg btn-block" type= "submit" [disabled]="form.invalid"> SUBMIT
+
+    </button>
+</div>
+
+</form>

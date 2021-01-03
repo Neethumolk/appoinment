@@ -1,0 +1,51 @@
+<!-- <form #signinForm="ngForm"  (submit)="onSubmit(form)" class="col s12 white"></form> -->
+ <!-- <form #signinForm="ngForm"  class=" col s12 white">
+<div class="row">
+    <div class="input-field col s12">
+        <i class="materials-icon prefix"></i>
+        <input type="text" #UserName ngModel name="UserName" placeholder="Username" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="input-field col s12">
+        <i class="materials-icon prefix"></i>
+        <input type="=password" #Password ngModel name ="Password" placeholder="Password"  >
+    </div>
+
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <button [disabled]="!signinForm.valid" class="btn-large bt-submit" type="submit">Login</button>
+
+        </div>
+    </div>
+    
+</form>  -->
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <div class="form-row">
+    <div class="form-group col-md-4">
+    <label>USER NAME</label>
+    <input class="form-control form-control-lg" placeholder="User Name"
+    name="userNAME" #userNAME="ngModel" [(ngModel)]="service.userNAME"
+    required >
+    </div>
+    <div class="form-group col-md-4">
+    <label>PASSWORD</label>
+    <input type="password" class="form-control form-control-lg" placeholder="Type Password"
+    name="passWORD" #passWORD="ngModel" [(ngModel)]="service.passWORD"
+    required >
+    </div>
+    
+    </div>
+    <div class="form-group">
+        <h1></h1>
+        <h1></h1>
+    <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid" >LOGIN</button>
+    </div>
+    <h1>
+        
+    </h1>
+    <h1></h1>
+    <button type="button" class="btn btn-info btn-lg btn-block" (click)="cancel()">Cancel</button>
+    
+    </form>

@@ -1,0 +1,36 @@
+<form autocomplete="off" novalidate #form="ngForm" (submit)="onSubmit(form)">
+
+
+    <input type="hidden" name="doctorId"
+    [value]="service.formData.doctorId"/>
+    <div class="form-group">
+    <label>Doctor Name</label>
+    <input class="form-control from form-control-lg" placeholder="Enter Doctor Name"
+    name="doctorName"#doctorName="ngModel" [(ngModel)]="service.formData.doctorName"
+    required >
+    </div>
+    <div class="form-group">
+    <label>Experience</label>
+    <input class="form-control from form-control-lg" placeholder="Enter year of Experience"
+    name="experience"#experience="ngModel" [(ngModel)]="service.formData.experience"
+    required maxlength="2" minlength="1">
+    </div>
+    <div class="form-group">
+    <label>PhoneNumber</label>
+    <input class="form-control from form-control-lg" placeholder="Enter PhoneNumber"
+    name="phoneNumber" #phoneNumber="ngModel" [(ngModel)]="service.formData.phoneNumber"
+    required maxlength="10" minlength="10">
+    </div>
+    <div class="form-group col-md-6">
+    <label>Specialization</label>
+    <input class="form-control from form-control-lg" placeholder="Enter Department Name"
+    name="specialization"#specialization="ngModel" [(ngModel)]="service.formData.specialization"
+    required >
+    </div>
+    <h1> </h1>
+    <div class="form-group">
+    <button type="button" class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Save</button>
+    </div>
+    
+    
+</form>
