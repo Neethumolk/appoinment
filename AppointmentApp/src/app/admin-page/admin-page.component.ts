@@ -21,8 +21,12 @@ export class AdminPageComponent implements OnInit {
     this.service.refreshlist();
     
   }
-  
-  
+  logout(){
+   
+      this.router.navigateByUrl('/sign')
+        
+  }
+ 
   populateForm(selectedRecord:DoctorDetail){
     this.service.formData =Object.assign({},selectedRecord);
   }

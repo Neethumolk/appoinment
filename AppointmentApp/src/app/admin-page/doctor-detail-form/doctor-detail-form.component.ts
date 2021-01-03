@@ -18,9 +18,7 @@ export class DoctorDetailFormComponent implements OnInit {
   ngOnInit(): void {
    
   }
-  //logOut(){
-   //  this.router.navigateByUrl('/sigin') 
-  //}
+ 
 onSubmit(form:NgForm)
 {
   this.service.postDoctorDetail().subscribe(
