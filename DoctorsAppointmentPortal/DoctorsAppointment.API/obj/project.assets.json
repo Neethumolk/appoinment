@@ -4066,11 +4066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\api\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\DoctorsAppointment.API.csproj",
+      "projectUniqueName": "D:\\api\\appoinment\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\DoctorsAppointment.API.csproj",
       "projectName": "DoctorsAppointment.API",
-      "projectPath": "D:\\api\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\DoctorsAppointment.API.csproj",
+      "projectPath": "D:\\api\\appoinment\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\DoctorsAppointment.API.csproj",
       "packagesPath": "C:\\Users\\neethumol.ks\\.nuget\\packages\\",
-      "outputPath": "D:\\api\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\obj\\",
+      "outputPath": "D:\\api\\appoinment\\DoctorsAppointmentPortal\\DoctorsAppointment.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neethumol.ks\\AppData\\Roaming\\NuGet\\NuGet.Config",
