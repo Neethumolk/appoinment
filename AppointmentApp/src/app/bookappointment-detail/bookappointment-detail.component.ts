@@ -20,7 +20,7 @@ export class BookappointmentDetailComponent implements OnInit {
     private toastr: ToastrService, private router : Router) { }
     logout()
     {
-      this.router.navigateByUrl('/patientregisterdetail');
+      this.router.navigateByUrl('/signin');
     }
   
   ngOnInit(): void {

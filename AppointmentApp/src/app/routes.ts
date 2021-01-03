@@ -12,6 +12,9 @@ export const appRoutes : Routes = [
     path : 'home' , component : HomePageComponent
 },
 {
+    path : 'patient' , component : PatientDetailsComponent
+},
+{
     path : 'bookappointment' , component : BookappointmentDetailComponent
 },
 {
@@ -25,11 +28,7 @@ export const appRoutes : Routes = [
     }]
 }
 ,
-{
-    path : 'login' , component : PatientDetailsComponent , children : [{
-        path: '', component:LogInComponent
-    }]
-},
+
 {
     path : 'signin' , component : PatientDetailsComponent , children : [{
         path: '', component:SignInComponent

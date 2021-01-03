@@ -17,15 +17,16 @@ export class AdminPageComponent implements OnInit {
   //public showModal : boolean = false;
  // public searchInput :string ;
 //public searchInput1 : string;
-  ngOnInit(): void {
+logout(){
+   
+  this.router.navigateByUrl('/sign');
+    
+} 
+ngOnInit(): void {
     this.service.refreshlist();
     
   }
-  logout(){
-   
-      this.router.navigateByUrl('/sign')
-        
-  }
+
  
   populateForm(selectedRecord:DoctorDetail){
     this.service.formData =Object.assign({},selectedRecord);
