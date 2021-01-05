@@ -29,7 +29,7 @@ namespace DoctorsAppointment.API.Controllers
         {
             _context.BookAppointmentDetails.Add(bookAppointmentDetail);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("GetDoctorDetail", new { id = bookAppointmentDetail.BookingId }, bookAppointmentDetail);
+            return Ok(new { id = bookAppointmentDetail.BookingId ,appointmentdetail = bookAppointmentDetail});
         }
     }
 }

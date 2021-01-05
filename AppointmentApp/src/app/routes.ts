@@ -35,6 +35,11 @@ export const appRoutes : Routes = [
     }]
 },
 {
+    path : 'login' , component : PatientDetailsComponent , children : [{
+        path: '', component:LogInComponent
+    }]
+},
+{
     path:'',redirectTo:'/signin',pathMatch:'full'
 }
 

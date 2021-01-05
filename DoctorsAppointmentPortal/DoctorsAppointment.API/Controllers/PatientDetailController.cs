@@ -30,6 +30,24 @@ namespace DoctorsAppointment.API.Controllers
             return BadRequest("Invalide credentials");
 
         }*/
+        [HttpPost]
+        [Route("login")]
+        public async Task<ActionResult<PatientDetail>> PatientLogin(PatientDetail patientDetail)
+        {
+            var thePatientDetail = await _context.PatientDetails.Where(d => d.Username == patientDetail.Username).FirstOrDefaultAsync();
+        if(thePatientDetail ? .Password == patientDetail.Password)
+            {
+                return this.Ok(thePatientDetail);
+            }
+            else
+            {
+                return this.NotFound();
+            }
+        }
+        
+
+        
+
         //get api/patientdetail
 
         [HttpGet]

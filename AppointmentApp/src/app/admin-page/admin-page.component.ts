@@ -19,11 +19,12 @@ export class AdminPageComponent implements OnInit {
 //public searchInput1 : string;
 logout(){
    
-  this.router.navigateByUrl('/sign');
+  this.router.navigateByUrl('/signin');
     
 } 
-ngOnInit(): void {
-    this.service.refreshlist();
+ngOnInit(){
+  console.log("redirected successfully!!!");
+  this.service.refreshlist();
     
   }
 

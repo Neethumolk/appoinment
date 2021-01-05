@@ -37,16 +37,17 @@ export class BookappointmentDetailComponent implements OnInit {
 {
   
   this.service.postBookAppointmentDetail().subscribe(
-    res => {  
+    (res:any) => {  
+      console.log(res);
+      
+      this.toastr.success('Appointment SucCessful Token Number: '+res.id,'Bookappointment');
    
     },
     err => {console.log(err)}
   );
   //alert("successfully inserted");
   this.resetForm(form);
-  this.toastr.success('Appointment Suceessful','Bookappoint ment');
-  
-
+ 
   }
   resetForm(form:NgForm)
   {

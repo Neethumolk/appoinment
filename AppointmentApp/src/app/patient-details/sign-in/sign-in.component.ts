@@ -19,9 +19,9 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {this.service.refreshlist();
     
   }
-  cancel(){
+  /*cancel(){
     this.router.navigateByUrl('/')
-     }
+     }*/
   onSubmit(form: NgForm){
     if(this.service.userNAME=='admin123' && this.service.passWORD=='admin123'){
       
