@@ -44,7 +44,7 @@ PatientLogin(user:any)
 {
   return this.http.post(this.baseURL, user)
   .pipe(map(response => {
-   // this.router.navigateByUrl('/bookappointment')
+   //this.router.navigateByUrl('/bookappointment')
     return response;
     }))
     .pipe(catchError((error, caught) => {

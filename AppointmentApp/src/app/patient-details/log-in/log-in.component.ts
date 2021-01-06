@@ -39,16 +39,17 @@ constructor(public service:PatientDetailService, private toastr: ToastrService,p
  
     this.service.PatientLogin(Data).subscribe(
       (res:any) => { 
-        console.log(res.patientId);
+      //  console.log(res.patientId);
         //localStorage.setItem('patientId','');
         this.router.navigateByUrl('/bookappointment');
       this.toastr.success("login succes");
      }, 
-      err => {console.log(err)
+      err => {this.toastr.success("Invalid credentials")
+        console.log(err)
         this.loading=false;
         this.errorMessage=console.error();
         
-      this.toastr.show("Invalid credentials")});
+      this.toastr.success("Invalid credentials")});
 
       
       }

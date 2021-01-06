@@ -40,7 +40,7 @@ export class BookappointmentDetailComponent implements OnInit {
     (res:any) => {  
       console.log(res);
       
-      this.toastr.success('Appointment SucCessful Token Number: '+res.id,'Bookappointment');
+      this.toastr.success('Appointment Successful ,Your Token Number: '+res.id,'Bookappointment');
    
     },
     err => {console.log(err)}

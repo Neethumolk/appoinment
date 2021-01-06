@@ -40,7 +40,7 @@ export const appRoutes : Routes = [
     }]
 },
 {
-    path:'',redirectTo:'/signin',pathMatch:'full'
+    path:'',redirectTo:'/login',pathMatch:'full'
 }
 
 ];
