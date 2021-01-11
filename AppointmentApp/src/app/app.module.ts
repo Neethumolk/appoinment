@@ -15,7 +15,7 @@ import { appRoutes } from './routes';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { DoctorDetailFormComponent } from './admin-page/doctor-detail-form/doctor-detail-form.component';
 //import { LoginDetailFormComponent } from './patient-details/login-detail-form/login-detail-form.component';
-import { SignInComponent } from './patient-details/sign-in/sign-in.component';
+//import { SignInComponent } from './patient-details/sign-in/sign-in.component';
 import { BookappointmentDetailComponent } from './bookappointment-detail/bookappointment-detail.component';
 //import { BookappointmentdetailsComponent } from './bookappointmentdetails/bookappointmentdetails.component';
 
@@ -31,7 +31,7 @@ import { BookappointmentDetailComponent } from './bookappointment-detail/bookapp
     AdminPageComponent,
     DoctorDetailFormComponent,
   
-    SignInComponent,
+  
     BookappointmentDetailComponent
  
     

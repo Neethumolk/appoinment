@@ -48,7 +48,7 @@ constructor(public service:PatientDetailService, private toastr: ToastrService,p
         console.log(err)
         this.loading=false;
         this.errorMessage=console.error();
-        
+        alert("Invalid username or password");
       this.toastr.success("Invalid credentials")});
 
       

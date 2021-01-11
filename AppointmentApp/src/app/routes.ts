@@ -6,7 +6,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LogInComponent } from './patient-details/log-in/log-in.component';
 import { PatientDetailFormComponent } from './patient-details/patient-detail-form/patient-detail-form.component';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
-import {SignInComponent} from './patient-details/sign-in/sign-in.component';
+//import {SignInComponent} from './patient-details/sign-in/sign-in.component';
 export const appRoutes : Routes = [
 {
     path : 'home' , component : HomePageComponent
@@ -29,11 +29,7 @@ export const appRoutes : Routes = [
 }
 ,
 
-{
-    path : 'signin' , component : PatientDetailsComponent , children : [{
-        path: '', component:SignInComponent
-    }]
-},
+
 {
     path : 'login' , component : PatientDetailsComponent , children : [{
         path: '', component:LogInComponent
